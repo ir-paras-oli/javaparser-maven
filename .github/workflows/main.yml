@@ -1,9 +1,8 @@
 name: Build Maven Package For Secrets
 on:
-  push:
-    branches: [ PROD ]
-  pull_request:
-    branches: [ PROD ]
+     workflow_dispatch:
+     push:
+          branches: [ STAGE ]
 
 permissions:
   checks: write
